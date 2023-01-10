@@ -1,0 +1,33 @@
+.textshow-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textshow-wrapper {
+    width: 80%;
+    max-width: 650px;
+    height: fit-content;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.showline1, .showline3 {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.showline1 img, .showline3 img {
+    width: 80px;
+    height: 60px;
+}
+
+.showline2 {
+    text-align: center;
+    padding: 15px 0;
+}

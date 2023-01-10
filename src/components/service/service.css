@@ -1,0 +1,123 @@
+.service-section {
+    min-height: calc(100vh - 57px);
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==== Service Container ==== */
+.service-container {
+    width: 90%;
+    height: 90%;
+}
+
+/* ==== Service Line1 Styling ==== */
+.service-line1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    gap: 35px;
+}
+
+.service-line1 #icon2 {
+    transform: rotate(180deg);
+}
+
+.service-container span {
+    color: #886b40;
+}
+
+/* ==== Service Line2 Styling ==== */
+.service-line2 h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 25px 0;
+    color: #291801;
+    text-shadow: 0 6px 5px rgb(0, 0, 0, 0.3);
+}
+
+/* ==== Service Cards Styling ==== */
+.service-cards-container {
+    /* width: 90%; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.master-service {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+#service-dot1 {
+    top: -22px;
+    left: -22px;
+    z-index: 1;
+}
+
+#service-dot2 {
+    top: -22px;
+    right: -22px;
+    z-index: 1;
+}
+
+#service-dot3 {
+    bottom: -22px;
+    left: -22px;
+    z-index: 1;
+}
+
+#service-dot4 {
+    bottom: -22px;
+    right: -22px;
+    z-index: 1;
+}
+
+.service-card {
+    position: relative;
+    min-width: 250px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: -3px -3px 7px rgb(240, 248, 255, 0.7), 3px 3px 7px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    /* display: none; */
+}
+
+.service-card:hover {
+    box-shadow: inset -3px -3px 7px rgb(240, 248, 255, 0.7), inset 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.service-card-top {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card-bottom {
+    width: 100%;
+    height: 20%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-card-bottom span {
+    color: #291801;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.service-image {
+    width: 80px;
+}

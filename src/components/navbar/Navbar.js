@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from '../home/Home'
+import Service from '../service/Service'
 // import hammer from '../../images/hammer.png'
 import './navbar.css'
 
@@ -28,6 +29,15 @@ function NavBar() {
         const about = document.querySelector('.about_section')
         about.scrollIntoView({ behavior: 'smooth', block: 'end'})
     }
+    const contact_us = () => {
+        const about = document.querySelector('.contact-us-container')
+        about.scrollIntoView({ behavior: 'smooth', block: 'end'})
+    }
+    const service = () => {
+        const about = document.querySelector('.service-section')
+        about.scrollIntoView({ behavior: 'smooth', block: 'end'})
+    }
+
 
   return (
     <nav>
@@ -43,7 +53,8 @@ function NavBar() {
                 <ul>
                     <li onClick={ () => {link(); homeSection();}}>Home</li>
                     <li onClick={ () => {link(); aboutSection(); }}>About</li>
-                    <li onClick={ () => {link(); }}>Service</li>
+                    <li onClick={ () => {link(); contact_us(); }}>Contact Us</li>
+                    <li onClick={ () => {link(); service()}}>Service</li>
                     <li onClick={ () => {link(); }}>Top-Cases</li>
                 </ul>
             </div>

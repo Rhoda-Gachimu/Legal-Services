@@ -1,6 +1,5 @@
 import React from 'react'
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi'
-import dot from '../../images/dots-shape.png'
 import './home.css'
 
 function Home() {

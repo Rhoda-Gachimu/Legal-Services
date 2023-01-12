@@ -64,7 +64,7 @@ function NavBar() {
         {/* ==== Right Nav ==== */}
         <div className='right_nav'>
             <div id='nav_appiontement'>APPOINTEMENT</div>
-            <div id='nav_member'>BECAME A MEMBER</div> 
+            <div id='nav_member'>BECOME A MEMBER</div> 
             <div className='menu' onClick={menu}>
                 <span className='bar'></span>
                 <span className='bar'></span>

@@ -11,9 +11,7 @@ function App() {
      <BrowserRouter>
       <Navbar />
       <Main />
-      <Routes>
-      <Route path='contact_us' element={<ContactUs />} />
-      </Routes>
+      <ContactUs />
       </BrowserRouter>
       <Footer />
     </div>

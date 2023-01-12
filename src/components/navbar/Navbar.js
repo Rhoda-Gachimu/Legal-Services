@@ -53,17 +53,18 @@ function NavBar() {
                 <ul>
                     <li onClick={ () => {link(); homeSection();}}>Home</li>
                     <li onClick={ () => {link(); aboutSection(); }}>About</li>
-                    <li onClick={ () => {link(); contact_us(); }}>Contact Us</li>
+                    <li onClick={ () => {link(); contact_us(); }}>Contact us</li>
                     <li onClick={ () => {link(); service()}}>Service</li>
                     <li onClick={ () => {link(); }}>Top-Cases</li>
                 </ul>
             </div>
-        </div>
+        </div>  
+        
         
         {/* ==== Right Nav ==== */}
         <div className='right_nav'>
             <div id='nav_appiontement'>APPOINTEMENT</div>
-            {/* <div id='nav_member'>BECAME A MEMBER</div> */}
+            <div id='nav_member'>BECAME A MEMBER</div> 
             <div className='menu' onClick={menu}>
                 <span className='bar'></span>
                 <span className='bar'></span>

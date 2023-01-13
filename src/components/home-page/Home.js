@@ -1,8 +1,14 @@
 import React from 'react'
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi'
+// import dot from '../../images/dots-shape.png'
 import './home.css'
 
 function Home() {
+
+  const aboutSection = () => {
+    const about = document.querySelector('.about_section')
+    about.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start'})
+}
 
   return (
     <section className='home_page'>
@@ -12,7 +18,7 @@ function Home() {
       </div>
 
       <div id='home-line2'>
-        <h1>Effective Case <br/> With Great <br/> Solutions.</h1>
+        <h1>Effective Case <br/> With Greate <br/> Solutions.</h1>
       </div>
 
       {/* <div id='home_card_container'>
@@ -26,8 +32,8 @@ function Home() {
       </div> */}
 
       <div className='home-slide-down-container'>
-            <span>Slide Down</span>
-            <HiOutlineChevronDoubleDown className='down-icon'/>
+            <span onClick={() => {aboutSection();}}>Slide Down</span>
+            <HiOutlineChevronDoubleDown className='down-icon' onClick={() => {aboutSection();}}/>
         </div>
     </section>
   )

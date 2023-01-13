@@ -3,6 +3,7 @@
     min-height: calc(80vh - 57px);
     background-color: white;
     padding: 60px 0 50px 0;
+    scroll-margin: 50px 0 0 0;
 }
 
 /* ==== Case Line1 Styling ==== */

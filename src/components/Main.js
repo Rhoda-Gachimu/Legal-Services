@@ -1,5 +1,5 @@
 import React from 'react'
-import Home from './home/Home'
+import Home from './home-page/Home'
 import About from './about/About'
 import Service from './service/Service'
 import Cases from './cases/Cases'
@@ -11,7 +11,6 @@ function Main() {
       <Home />
       <About />
       <Service />
-    
       <Cases />
       {/* <Footer /> */}
     </>

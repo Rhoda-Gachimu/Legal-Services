@@ -11,8 +11,11 @@
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
-/* .All_Content {
-    margin-top: 57px;
-} */
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-/* Appointments css code starts here */
+.All_Content {
+    margin-top: 57px;
+}

@@ -1,12 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './footer.css'
 
 function Footer() {
-  return (
-    
-    <section className='footer-section'>
-      
 
+    function appointmentLink() {
+        window.scrollTo(0, 0)
+    }
+
+  return (
+    <section className='footer-section'>
       <div className='footer-div'>
         <div className='footer-line1'>
             <span className='pointing_icon'></span>
@@ -69,10 +72,9 @@ function Footer() {
             <p>Top Cases</p>
         </div>
 
-        <div className='footer-btn'>
-            <span>GET AN APPOINTEMENT</span>
-            <span></span>
-        </div>
+        <Link to='/appointment'>
+            <div className='footer-btn' onClick={appointmentLink}>GET AN APPOINTEMENT</div>
+        </Link>
       </div>
       
     </section>

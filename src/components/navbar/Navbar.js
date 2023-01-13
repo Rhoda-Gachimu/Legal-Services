@@ -1,10 +1,8 @@
 import React from 'react'
-import Appointment from '../appointment/Appointment'
-import Home from '../home/Home'
-import Service from '../service/Service'
+// import Home from '../home-page/Home'
 // import hammer from '../../images/hammer.png'
+import { Link } from 'react-router-dom'
 import './navbar.css'
-import { Link } from "react-router-dom";
 
 function NavBar() {
 
@@ -22,67 +20,71 @@ function NavBar() {
         menu.classList.remove('active')
     }
 
+    // ==== Links ScrollInteoView =====
     const homeSection = () => {
         const home = document.querySelector('.home_page')
-        home.scrollIntoView({ behavior: 'smooth', block: 'start'})
+        home.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start'})
     }
 
     const aboutSection = () => {
         const about = document.querySelector('.about_section')
-        about.scrollIntoView({ behavior: 'smooth', block: 'end'})
+        about.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start'})
     }
-    const contact_us = () => {
-        const about = document.querySelector('.contact-us-container')
-        about.scrollIntoView({ behavior: 'smooth', block: 'end'})
+
+    const serviceSection = () => {
+        const service = document.querySelector('.service-section')
+        service.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start'})
     }
-    const service = () => {
-        const about = document.querySelector('.service-section')
-        about.scrollIntoView({ behavior: 'smooth', block: 'end'})
+
+    const casesSection = () => {
+        const cases = document.querySelector('.cases-section')
+        cases.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start'})
+    }
+
+    // Check The Url
+
+    function appointmentLink() {
+        window.scrollTo(0, 0)
     }
 
 
   return (
-    <div>
     <nav>
         {/* ==== Right Nav ==== */}
         <div className='left_nav' >
-                <span>TOP LAWYERS</span>
+                <span onClick={() => {homeSection();}}>
+                    <Link to='/'>TOP LAWYERS</Link>
+                </span>
             <hr/>
         </div>
 
         {/* ==== Middle Nav === */}
         <div className='middle_nav'>
             <div className='nav_links'>
-                
                 <ul>
-                    <li onClick={ () => {link(); homeSection();}}>Home</li>
-                    <li onClick={ () => {link(); aboutSection(); }}>About</li>
-                    <li onClick={ () => {link(); contact_us(); }}>Contact us</li>
-                    <li onClick={ () => {link(); service()}}>Service</li>
-                    <li onClick={ () => {link(); }}>Top-Cases</li>
-                    
+                    <li onClick={() => {link(); homeSection() }}><Link to='/'>Home</Link></li>
+                    <li onClick={() => {link(); aboutSection() }}><Link to='/'>About</Link></li>
+                    <li onClick={() => {link(); serviceSection() }}><Link to='/'>Service</Link></li>
+                    <li onClick={() => {link(); casesSection() }}><Link to='/'>Top-Cases</Link></li>
                 </ul>
             </div>
-        </div>  
-        
+        </div>
         
         {/* ==== Right Nav ==== */}
         <div className='right_nav'>
-            {/* <div id='nav_appointement'>APPOINTEMENT</div> */}
-            <Link to ="appointment">Appointment</Link>
-
-            <div id='nav_member'>BECOME A MEMBER</div> 
+            <Link to='/appointment' onClick={appointmentLink} >
+                <div id='nav_appiontement'>
+                    APPOINTEMENT
+                </div>
+            </Link>
+            {/* <div id='nav_member'>BECAME A MEMBER</div> */}
             <div className='menu' onClick={menu}>
                 <span className='bar'></span>
                 <span className='bar'></span>
                 <span className='bar'></span>
             </div>
         </div>
-        
-        
     </nav>
-    
-    </div>
   )
 }
 

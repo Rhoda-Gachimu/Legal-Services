@@ -1,6 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './appointment.css'
+import { Link } from "react-router-dom";
+
+  
+   
+
+
 function Appointment() {
+
+//     const [appointment, setAppointment] = useState([]);
+  
+
+//   const fetchAppointment= (category)=>{
+//     fetch(`http://localhost:3000`)
+//     .then((response)=>response.json())
+//     .then(()=>{
+//       setAppointment(appointment);
+//     });
+
+//   }
+
+//   const handleClick = (event)=>{
+//     fetchAppointment(event.target.value)
+//   }
   return (
     <>
         {/* example 3 */}
@@ -52,10 +74,11 @@ function Appointment() {
                         <label for="female">Female</label> 
                     </div>
                 </div>
-                <div class="form-submit-btn">
-                    <inport type="submit" value="Book"></inport>
-                </div>
+                <button type='submit'>Submit</button>
             </form>
+            {/* <Link to="../">
+               <button>Home</button>
+           </Link> */}
         </div>
     </>
   )

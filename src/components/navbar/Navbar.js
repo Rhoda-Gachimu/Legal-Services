@@ -1,8 +1,10 @@
 import React from 'react'
+import Appointment from '../appointment/Appointment'
 import Home from '../home/Home'
 import Service from '../service/Service'
 // import hammer from '../../images/hammer.png'
 import './navbar.css'
+import { Link } from "react-router-dom";
 
 function NavBar() {
 
@@ -40,6 +42,7 @@ function NavBar() {
 
 
   return (
+    <div>
     <nav>
         {/* ==== Right Nav ==== */}
         <div className='left_nav' >
@@ -50,12 +53,14 @@ function NavBar() {
         {/* ==== Middle Nav === */}
         <div className='middle_nav'>
             <div className='nav_links'>
+                
                 <ul>
                     <li onClick={ () => {link(); homeSection();}}>Home</li>
                     <li onClick={ () => {link(); aboutSection(); }}>About</li>
                     <li onClick={ () => {link(); contact_us(); }}>Contact us</li>
                     <li onClick={ () => {link(); service()}}>Service</li>
                     <li onClick={ () => {link(); }}>Top-Cases</li>
+                    
                 </ul>
             </div>
         </div>  
@@ -63,7 +68,9 @@ function NavBar() {
         
         {/* ==== Right Nav ==== */}
         <div className='right_nav'>
-            <div id='nav_appiontement'>APPOINTEMENT</div>
+            {/* <div id='nav_appointement'>APPOINTEMENT</div> */}
+            <Link to ="appointment">Appointment</Link>
+
             <div id='nav_member'>BECOME A MEMBER</div> 
             <div className='menu' onClick={menu}>
                 <span className='bar'></span>
@@ -71,7 +78,11 @@ function NavBar() {
                 <span className='bar'></span>
             </div>
         </div>
+        
+        
     </nav>
+    
+    </div>
   )
 }
 

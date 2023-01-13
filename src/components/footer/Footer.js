@@ -3,7 +3,10 @@ import './footer.css'
 
 function Footer() {
   return (
+    
     <section className='footer-section'>
+      
+
       <div className='footer-div'>
         <div className='footer-line1'>
             <span className='pointing_icon'></span>

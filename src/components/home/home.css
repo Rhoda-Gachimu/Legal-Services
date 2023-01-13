@@ -52,11 +52,14 @@
 }
 
 /* ==== Line Two Style Start ==== */
+.strong{
+    font-size: 23rem;
+}
 #home-line2 {
     margin: 10px 0 0 0;
     font-size: 45px;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
-    color: #374f3e;
+    color: #385a42;
 }
 
 /* ==== Home Card Styling ==== */

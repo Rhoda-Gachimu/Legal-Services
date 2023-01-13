@@ -43,6 +43,10 @@
     font-size: 25px;
     justify-content: space-between;
   }
+  button{
+  background-color: #8f9202;
+  padding: 5px;
+  }
   /* .user-input-box label{
     content: 95%;
     color: rgb(117, 6, 6);

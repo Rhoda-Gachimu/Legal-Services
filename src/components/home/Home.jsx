@@ -12,7 +12,7 @@ function Home() {
       </div>
 
       <div id='home-line2'>
-        <h1>Effective Case <br/> With Greate <br/> Solutions.</h1>
+        <h1>Effective Case <br/> With Great <br/> Solutions.</h1>
       </div>
 
       {/* <div id='home_card_container'>

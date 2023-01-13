@@ -1,0 +1,32 @@
+.footer2 {
+    width: 100%;
+    height: 150px;
+    background-color:#8f9202 ;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .footer2 p {
+    color: white;
+    margin: auto 0;
+  }
+  #email {
+    background-color: white;
+    padding: 8px 30px;
+    border: 1px solid white;
+  }
+  #sub {
+    padding: 8px 24px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #sub:hover {
+    color: #8f9202;
+    background-color: white;
+    border-left: 1px solid #8f9202;
+  }

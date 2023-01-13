@@ -1,5 +1,7 @@
 import React from 'react'
 import './appointment.css'
+
+
 function Appointment() {
   return (
     <>
@@ -55,6 +57,7 @@ function Appointment() {
                 <div class="form-submit-btn">
                     <inport type="submit" value="Book"></inport>
                 </div>
+                <input type="submit" value="Submit" />
             </form>
         </div>
     </>

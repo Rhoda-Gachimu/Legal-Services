@@ -11,7 +11,7 @@ export default function Footer() {
         <ul>
           <li>
             <AiOutlineHome className='socials-icons' />
-            {/* <a href='/home'>home</a> */}
+            <a href='/home'>home</a>
           </li>
           <li>
             <BsInfoCircle className='socials-icons' />

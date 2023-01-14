@@ -2,7 +2,7 @@
 // import Appointment from './components/appointment/Appointment';
 // import Newsletter from './components/newsletter/Newsletter';
 import './App.css';
-import NavBar from './components/navbar/NavBar'
+// import NavBar from './components/navbar/NavBar'
 import Main from './components/Main'
 import Footer from './components/footer/Footer'
 import Appointment from './components/appointment/Appointment';
@@ -11,7 +11,7 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <>
-    <NavBar />
+    {/* <NavBar /> */}
 
     <div className='All_Content'>
       <Routes>

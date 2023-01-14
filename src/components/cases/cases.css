@@ -3,7 +3,6 @@
     min-height: calc(80vh - 57px);
     background-color: white;
     padding: 60px 0 50px 0;
-    scroll-margin: 50px 0 0 0;
 }
 
 /* ==== Case Line1 Styling ==== */
@@ -75,13 +74,13 @@
 }
 
 #cases-card-1 div {
-    background-image: url(../../images/lady-1.jpg);
+    background-image: url(../../images/top1.webp);
 }
 
 #cases-card-2 div {
-    background-image: url(../../images/man-1.jpg);
+    background-image: url(../../images/top2.jpg);
 }
 
 #cases-card-3 div {
-    background-image: url(../../images/new-building.jpg);
+    background-image: url(../../images/top3.webp);
 }

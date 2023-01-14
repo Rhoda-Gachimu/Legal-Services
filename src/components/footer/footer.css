@@ -1,114 +1,72 @@
-.footer-section {
-    width: 100%;
-    min-height: 420px;
-    background-color: #222;
-    display: flex;
-    justify-content: space-evenly;
-    /* align-items: center; */
-    flex-wrap: wrap;
-    padding: 70px 0;
-    color: wheat;
-    gap: 30px;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+}
+.footer {
+  font-size: 14px;
+  margin-top: 0.1rem;
+  background-color: #586b88;
+}
+.footer-top {
+  display: flex;
+  justify-content: center;
+}
+.footer-top ul {
+  margin-top: 0.4rem;
+
+  padding: 0.4rem;
+  display: flex;
+  list-style-type: none;
+}
+.footer-top ul li {
+  margin: auto 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.socials-icons {
+  color: #fff;
+}
+.footer-top ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-center {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+}
+.footer-center ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
-/* ==== Footer Div Styling ==== */
-.footer-line1 {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    margin-bottom: 30px;
+.footer-center ul li {
+  margin: auto 0.4rem;
+  font-size: 16px;
+  background-color: rgba(57, 62, 70, 0.4);
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
 }
 
-.footer-line1 span {
-    font-size: 20px;
-    font-weight: bolder;
-    color: #e8c38b;
+.footer-center ul li:hover {
+  background-color: rgba(57, 62, 70, 0.9);
+  color: white;
+  transition: all 1.5s ease-in-out;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.6rem;
 }
 
-.footer-div {
-    position: relative;
-    width: 300px;
-    min-height: 337.5px;
-    color: white;
+.footer-bottom p {
+  margin-right: 10%;
+  padding: 0.2rem 0.4rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
 }
-
-.footer-text {
-    margin-left: 40px;
-    line-height: 35px;
-}
-
-.footer-div:nth-child(1) p {
-    line-height: 25px;
-}
-
-/* ==== hr ==== */
-.footer-last-div {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    line-height: 35px;
-}
-.footer-hr-container {
-    position: relative;
-    background-color: aliceblue;
-    height: fit-content;
-}
-
-.footer-hr-container hr {
-    width: 25px;
-    height: 1px;
-    border: 0;
-    background-color: #e8c38b;
-}
-
-.point {
-    position: absolute;
-    top: -2.5px;
-    display: block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #e8c38b;
-}
-
-/* ==== Footer Button ==== */
-.footer-btn {
-    position: absolute;
-    bottom: 50px;
-    right: 20px;
-    height: 45px;
-    width: 250px;
-    background-color: #ffffff;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-/* .footer-btn::before {
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    content: '';
-    width: 250px;
-    height: 45px;
-    border: 1px solid #ffffff;
-    transition: all 0.3s;
-} */
-
-.footer-btn:hover {
-    background-color: #e8c38b;
-    bottom: 45px;
-    right: 15px;
-}
-
-.footer-btn:hover::before {
-    border-color: #e8c38b;
-    top: -7px;
-    left: -7px;
-}
-

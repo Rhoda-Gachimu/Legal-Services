@@ -5,11 +5,9 @@ const ContactUs = () => {
   return (
     <>
       <div className='contact-us-container'>
-      <div className='cases-lin1'>
-        <span className='pointing_icon' ></span>
-        <span>Let's connect</span>
-        <span className='pointing_icon' id='point2' ></span>
-      </div>
+        <div className='contact-header'>
+          <h2>Contact Us</h2>
+        </div>
         <div className='contact-form-parent'>
           <div className='contact-form-card'>
             <img src={svg} alt='person climbing stairs' />

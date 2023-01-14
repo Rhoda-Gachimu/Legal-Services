@@ -4,20 +4,22 @@
     /* box-sizing: border-box; */
   }
   
-  body {
+  /* .body {
     display: flex;
     background-image: url('https://cdn.pixabay.com/photo/2018/11/17/07/10/planner-3820633_960_720.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 150vh;
     justify-content: center;
-  }
+  } */
   
   .container{
-    margin-top: 100px;
+    margin-top: 70px;
+    align-items: center;
+    margin-left: 500px;
     width: 850px;
     background: rgba(0,0,0,0.5);
-    height: 800px;
+    height: 778px;
     padding: 28px;
     border-radius: 10px;
     box-shadow: inset -4px 4px white;
@@ -42,6 +44,9 @@
     padding-bottom: 15px;
     font-size: 25px;
     justify-content: space-between;
+  }
+  .form-submit-btn{
+    background-color: aqua;
   }
   /* .user-input-box label{
     content: 95%;

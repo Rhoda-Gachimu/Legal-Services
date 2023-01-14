@@ -5,16 +5,15 @@
     max-height: auto;
     margin-top: 50px;
     padding: 24px 0 10px 0;
+    /* background-color:rgb(207, 59, 59); */
     display: flex;
-    scroll-margin: 70px 0 0 0;
 }
 
 /* ==== About Big Container ==== */
 #about_container {
-    transform: scale(0.9);
     position: relative;
     width: 90%;
-    height: 700px;
+    height: 764px;
     margin: 0 auto;
     display: flex;
 }
@@ -58,7 +57,7 @@
 }
 .left-about-line1 span:last-child {
     margin-left: 20px;
-    color: #886b40;
+    color: #8f9202;
 }
 
 .left-about-line2 {
@@ -86,7 +85,6 @@
 
 /* ==== About Card Styling ==== */
 .about-card-wrapper {
-    transform: scale(0.9);
     /* display: none; */
     position: absolute;
     right: 7%;
@@ -197,4 +195,3 @@
     }
 
 }
-

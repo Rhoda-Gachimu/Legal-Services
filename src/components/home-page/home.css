@@ -2,18 +2,18 @@
 .home_page {
     position: relative;
     width: 100%;
-    height: calc(100vh - 57px);
-    /* background-color: #f5f5f5; */
-    /* background-image: url(../../images/books-in-black-r0om-2.jpg); */
-    background-image: url(../../images/white-3.jpg);
-    /* background-position: bottom; */
-    background-position-x: center;
-    background-repeat: no-repeat;
+    height: calc(100vh - 53px);
+    background: url("../../images/miiii.jpeg") rgba(252, 252, 252, 0.3);
     background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 10%;
+    overflow: hidden;
     scroll-margin: 70px 0 0 0;
 }
 
@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    font-size: 90px;
 }
 .pointing_icon{
     position: relative;
@@ -45,17 +46,17 @@
 }
 
 #home-line1 span:last-child {
-    margin-left: 20px;
-    font-size: 13px;
-    color: #000000;
+    margin-left: 45px;
+    font-size: 20px;
+    color: #8f9202;
 }
 
 /* ==== Line Two Style Start ==== */
 #home-line2 {
-    margin: 6px 0 0 0;
-    font-size: 35px;
-    /* text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7); */
-    color: black;
+    margin: 10px 0 0 0;
+    font-size: 45px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+    color: #101110;
 }
 
 /* ==== Home Card Styling ==== */
@@ -144,4 +145,3 @@
         transform: translateY(0%);
     }
 }
-

@@ -26,6 +26,11 @@ function Appointment() {
                         <span id='male'>Male</span>
                         &nbsp;&nbsp;&nbsp;&nbsp;
 
+                        <input type="radio" name="Gender" id='female' />
+                        &nbsp;
+                        <span id='female'>Female</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
 
                 <div class="form-submit-btn">
                     <inport type="submit" value="Book"></inport>

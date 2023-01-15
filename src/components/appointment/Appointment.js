@@ -58,7 +58,7 @@ function Appointment() {
                 <div class="form-submit-btn">
                     <inport type="submit" value="Book"></inport>
                 </div>
-                <input type="submit" value="Submit" />
+               
 
                 <button type='submit'>Submit</button>
 

@@ -26,12 +26,12 @@ function Appointment() {
                         <span id='male'>Male</span>
                         &nbsp;&nbsp;&nbsp;&nbsp;
 
-                        <input type="radio" name="Gender" id='femalemale' />
-                        &nbsp;
-                        <span id='female'>Female</span><br></br> 
 
-                        <label>Dispite Type:</label> <br></br>
-                        &nbsp;&nbsp;&nbsp;
+                <div class="form-submit-btn">
+                    <inport type="submit" value="Book"></inport>
+                </div>
+               
+
 
                         <input type="checkbox" name="disputetype" id='Criminal' />
                         &nbsp;

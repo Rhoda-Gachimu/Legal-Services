@@ -20,7 +20,7 @@ function Service() {
             </div>
 
             <div className='service-line2'>
-                <h1>Our Top Mission Areas</h1>
+                <h1>Our Practice Areas</h1>
             </div>
 
             <div className='service-cards-container'>
@@ -33,7 +33,7 @@ function Service() {
                             <img src={murder} alt='' className='service-image' />
                         </div>
                         <div className='service-card-bottom'>
-                            <span>murder Case</span>
+                            <span>Childern's Law</span>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ function Service() {
                         <img src={driving} alt='' className='service-image' />
                         </div>
                         <div className='service-card-bottom'>
-                            <span>driving Crimes</span>
+                            <span>Family Law</span>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ function Service() {
                             <img src={drug} alt='' className='service-image' />
                         </div>
                         <div className='service-card-bottom'>
-                            <span>drug related</span>
+                            <span>Criminal Law</span>
                         </div>
                     </div>
                     <img className='dots' id='service-dot2' src={dot} alt=''/>
@@ -67,7 +67,7 @@ function Service() {
                             <img src={fraud} alt='' className='service-image' />
                         </div>
                         <div className='service-card-bottom'>
-                            <span>fraud Case</span>
+                            <span>Succession Law</span>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ function Service() {
                             <img src={violent} alt='' className='service-image' />
                         </div>
                         <div className='service-card-bottom'>
-                            <span>Violent Crimes</span>
+                            <span>Commercial Law</span>
                         </div>
                     </div>
                 </div>

@@ -1,67 +1,67 @@
 *{
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-  }
-  
-  body {
-    display: flex;
-    /* background-image: url('https://cdn.pixabay.com/photo/2018/11/17/07/10/planner-3820633_960_720.jpg') ; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 150vh;
-    justify-content: center;
-  }
-  
-  .container{
-    margin-top: 100px;
-    width: 850px;
-    background: rgba(0,0,0,0.5);
-    height: 800px;
-    padding: 28px;
-    border-radius: 10px;
-    box-shadow: inset -4px 4px white;
-  }
-  .form-title{
-    font-size: 36px;
-    font-weight: 600px;
-    text-align: center;
-    padding-bottom: 6px;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    border-bottom: solid 3px #8f9202;;
-    margin-bottom: 100px;
-  }
-  .main-user-info{
-    padding: 20px 0;
-  }
-  
-  .user-input-info{
-    display: flex;
-    width: 50%;
-    padding-bottom: 15px;
-    font-size: 25px;
-    justify-content: space-between;
-  }
-  button{
-  background-color: #8f9202;
-  padding: 5px;
-  }
-  /* .user-input-box label{
-    content: 95%;
-    color: rgb(117, 6, 6);
-    font-size: 20px;
-    font-weight: 400;
-    margin: 5px;
-  } */
-  /* .user-input-info #placeholder-text{
-    font-weight: 400;
-  } */
-  /* .user-input-box input{
-    height: 40px;
-    width: 95%;
-    border-radius: 7px;
-    outline: none;
-    border: 0 10px;
-  } */
-  
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+/* .body {
+  display: flex;
+  background-image: url('https://cdn.pixabay.com/photo/2018/11/17/07/10/planner-3820633_960_720.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+  justify-content: center;
+} */
+
+.container{
+  margin-top: 70px;
+  align-items: center;
+  margin-left: 500px;
+  width: 850px;
+  background: rgba(0,0,0,0.5);
+  height: 778px;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: inset -4px 4px white;
+}
+.form-title{
+  font-size: 36px;
+  font-weight: 600px;
+  text-align: center;
+  padding-bottom: 6px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-bottom: solid 3px rgb(59, 220, 83);
+  margin-bottom: 100px;
+}
+.main-user-info{
+  padding: 20px 0;
+}
+
+.user-input-info{
+  display: flex;
+  width: 50%;
+  padding-bottom: 15px;
+  font-size: 25px;
+  justify-content: space-between;
+}
+.form-submit-btn{
+  background-color: aqua;
+}
+/* .user-input-box label{
+  content: 95%;
+  color: rgb(117, 6, 6);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px;
+} */
+/* .user-input-info #placeholder-text{
+  font-weight: 400;
+} */
+/* .user-input-box input{
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 0 10px;
+} */

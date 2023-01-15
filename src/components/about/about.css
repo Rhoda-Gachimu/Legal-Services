@@ -13,7 +13,7 @@
 #about_container {
     position: relative;
     width: 90%;
-    height: 700px;
+    height: 764px;
     margin: 0 auto;
     display: flex;
 }
@@ -57,7 +57,7 @@
 }
 .left-about-line1 span:last-child {
     margin-left: 20px;
-    color: #886b40;
+    color: #8f9202;
 }
 
 .left-about-line2 {

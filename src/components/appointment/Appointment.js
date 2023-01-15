@@ -1,5 +1,7 @@
 import React from 'react'
 import './appointment.css'
+import { Link } from "react-router-dom";
+
 function Appointment() {
   return (
     <>
@@ -52,9 +54,14 @@ function Appointment() {
                         <label for="female">Female</label> 
                     </div>
                 </div>
+
                 <div class="form-submit-btn">
                     <inport type="submit" value="Book"></inport>
                 </div>
+                <input type="submit" value="Submit" />
+
+                <button type='submit'>Submit</button>
+
             </form>
         </div>
     </>

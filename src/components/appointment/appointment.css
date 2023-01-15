@@ -8,10 +8,18 @@ body {
  background-size: cover;
  background-repeat: no-repeat;
 }
-
+.appointment-container{
+  background-color: aqua;
+  background-image: url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 700px;
+}
 
 div.main{
-  width:500px;
+   /* background-image: url("https://imgs.search.brave.com/50m_awZR9OmlcCe683pTiH2eV5tZ-Mi1jYHGOU5yciY/rs:fit:1080:608:1/g:ce/aHR0cHM6Ly9xdWlu/bmFubGF3LmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOS8w/My9jb3VydC1hcHBv/aW50ZWQtYXR0b3Ju/ZXlzLTEwODB4NjA4/LmpwZWc"); */
+  width:600px;
   height: 500px;
   margin: 100px auto 0px auto;
   background-color: rgba(0,0,0,0.5);

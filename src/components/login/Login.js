@@ -2,16 +2,16 @@
 // import React, { useState } from 'react';
 // import "../components/login.css";
 
-// function Login({ setLoggedIn }) {
-//     const initFormState = {
-//         username: '',
-//         password: ''
-//     }
+function Login({ setLoggedIn }) {
+    const initFormState = {
+        username: '',
+        password: ''
+    }
 
-//     const [formState, setFormState] = useState(initFormState);
+    const [formState, setFormState] = useState(initFormState);
 
 
-//     const navigate = useNavigate()
+    const navigate = useNavigate()
 
    
 

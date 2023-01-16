@@ -22,10 +22,10 @@
 //         setFormState((prevState) => ({...prevState, [name]: value}))
 //     }
 
-//     const passwordConfChange = (e) => {
-//         const { name, value } = e.target;
-//         setPassConfirmation((prevState) => ({...prevState, [name]: value}))
-//     }
+    const passwordConfChange = (e) => {
+        const { name, value } = e.target;
+        setPassConfirmation((prevState) => ({...prevState, [name]: value}))
+    }
 
     const handleSubmit = async(e) => {
         e.preventDefault();

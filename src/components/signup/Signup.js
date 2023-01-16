@@ -27,26 +27,26 @@
 //         setPassConfirmation((prevState) => ({...prevState, [name]: value}))
 //     }
 
-//     const handleSubmit = async(e) => {
-//         e.preventDefault();
-//         if (formState.password !== passConfirmation.passwordConfirm) {
-//             alert('Passwords do not match! Please try again.')
-//         } else {
-//             await fetch ('', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify(formState)
-//             })
-//             .then ((resp) => resp.json())
-//             .then ((newUser) => {
-//                 addNewUser(newUser)
-//                 setFormState(initFormState)
-//                 navigate('/')
-//             })
-//         }
-//     }
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+        if (formState.password !== passConfirmation.passwordConfirm) {
+            alert('Passwords do not match! Please try again.')
+        } else {
+            await fetch ('', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formState)
+            })
+            .then ((resp) => resp.json())
+            .then ((newUser) => {
+                addNewUser(newUser)
+                setFormState(initFormState)
+                navigate('/')
+            })
+        }
+    }
 
     return(
         <div className="signup-box">

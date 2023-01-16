@@ -17,9 +17,9 @@ h2,h3{
     left: 40%;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./../../assets//Notes.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('');
     background-size: cover;
-    box-shadow: 0 15px 25px rgba(33, 80, 167, 0.7);
+    box-shadow: 0 15px 25px rgba(209, 135, 25, 0.7);
     border-radius: 10px;
 }
 
@@ -37,20 +37,20 @@ h2,h3{
 
  #formBtn {
     padding: 10px 20px;
-    color: rgb(177, 177, 209);
+    color: rgb(218, 158, 69);
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
     letter-spacing: 4px;
-    border: 1px solid #8F7CEC;
+    border: 1px solid #af5002;
     margin: auto;
 } 
 
 #formBtn:hover {
-    background: rgb(109, 109, 170);
+    background: rgb(218, 158, 69);
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgb(109, 109, 170), 0 0 25px rgb(109, 109, 170), 0 0 50px rgb(109, 109, 170), 0 0 100px rgb(109, 109, 170);
+    box-shadow: 0 0 5px rgb(209, 135, 25, 0.7), 0 0 25px rgb(209, 135, 25, 0.7), 0 0 50px rgb(209, 135, 25, 0.7), 0 0 100px rgb(209, 135, 25, 0.7);
  } 
 
 .button-form{
@@ -67,7 +67,7 @@ h2,h3{
 .header text-center .logout-form  */
 #logout {
     padding: 10px 20px;
-    border: 1px solid rgb(24, 24, 199);
+    border: 1px solid rgb(56, 32, 0);
     margin: auto;
     transition: .2s;
     text-transform: uppercase;
@@ -76,8 +76,8 @@ h2,h3{
 } 
 
 #logout:hover{
-    background: #969dc5;
+    background: rgb(218, 158, 69);
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgb(109, 109, 170), 0 0 25px rgb(109, 109, 170), 0 0 50px rgb(109, 109, 170), 0 0 100px rgb(109, 109, 170);
+    box-shadow: 0 0 5px rgb(209, 135, 25, 0.7), 0 0 25px rgb(209, 135, 25, 0.7), 0 0 50px rgb(209, 135, 25, 0.7), 0 0 100px rgb(209, 135, 25, 0.7);
 } 

@@ -39,7 +39,7 @@ h3,h4,h5 {
     padding: 10px 0;
 }
 
-/* #formBtn {
+#formBtn {
     padding: 10px 20px;
     color: rgb(209, 199, 177);
     text-transform: uppercase;
@@ -50,7 +50,7 @@ h3,h4,h5 {
     margin: auto;
 }
 
-#formBtn:hover {
+/* #formBtn:hover {
     background: #fdb00a;
     color: #fff;
     border-radius: 5px;

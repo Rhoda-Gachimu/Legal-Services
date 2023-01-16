@@ -1,82 +1,76 @@
-// import React from 'react'
 // import { useNavigate } from 'react-router-dom';
-// import './signup.css'
+// import React, { useState } from 'react';
+// import "../components/login.css";
 
-// function Signup({ addNewUser }) {
+// function Login({ setLoggedIn }) {
 //     const initFormState = {
-//         firstname:'',
-//         lastname:'',
 //         username: '',
-//         email: '',
 //         password: ''
 //     }
 
+//     const [formState, setFormState] = useState(initFormState);
+
+
 //     const navigate = useNavigate()
 
-//     const [formState, setFormState] = useState(initFormState);
-//     const [passConfirmation, setPassConfirmation] = useState({passwordConfirm: ''})
+   
+
 
 
 //     const formChange = (e) => {
-//         const { name, value } = e.target;
+//         const {name, value } = e.target;
 //         setFormState((prevState) => ({...prevState, [name]: value}))
-//     }
-
-//     const passwordConfChange = (e) => {
-//         const { name, value } = e.target;
-//         setPassConfirmation((prevState) => ({...prevState, [name]: value}))
 //     }
 
 //     const handleSubmit = async(e) => {
 //         e.preventDefault();
-//         if (formState.password !== passConfirmation.passwordConfirm) {
-//             alert('Passwords do not match! Please try again.')
-//         } else {
-//             await fetch ('', {
+//         await fetch ('', {
 //             method: 'POST',
 //             headers: {
 //                 'Content-Type': 'application/json'
 //             },
 //             body: JSON.stringify(formState)
-//             })
-//             .then ((resp) => resp.json())
-//             .then ((newUser) => {
-//                 addNewUser(newUser)
+//         })
+//         .then ((resp) => resp.json())
+//         .then ((user) => {
+//             console.log(user)
+//             if(user.error) {
+//                 alert(user.error)
+//             } else {
+//                 setLoggedIn(user)
 //                 setFormState(initFormState)
-//                 navigate('/')
-//             })
-//         }
+//                 localStorage.setItem('user', user)
+//                 console.log(user)
+//                 navigate('/home')
+//             }
+//         })
 //     }
 
-//     return(
-//         <div className="signup-box">
-//             <h2>Signup</h2>
-//             <form className='formWrapper' onSubmit= {handleSubmit} autoComplete="off">
-//                 <div className="user-box">
-//                   <label className = 'label' htmlFor = 'firstname'></label>
-//                   <input className = 'input' id = 'firstname' type = 'text' name = 'firstname' placeholder = 'Firstname' value = {formState.firstname} onChange = {formChange} required />
-//                 </div>
-//                 <div className="user-box">
-//                    <label className = 'label' htmlFor = 'lastname'></label>
-//                    <input className = 'input' id = 'lastname' type = 'text' name = 'lastname' placeholder = 'Lastname' value = {formState.lastname} onChange = {formChange} required />
-//                 </div>
-//                 <div className="user-box">
-//                    <label className = 'label' htmlFor = 'username'></label>
-//                    <input className = 'input' id = 'username' type = 'text' name = 'username' placeholder = 'Username' value = {formState.username} onChange = {formChange} required />
-//                 </div>
-//                 <div class = "user-box">
-//                    <label className = 'label' htmlFor = 'password'></label>
-//                    <input className = 'input' id = 'password' type = 'password' name = 'password' placeholder = 'Password' value = {formState.password} onChange = {formChange} required />
-//                    <label className = 'label' htmlFor = 'passwordConfirm'></label>
-//                    <input className = 'input' id = 'passwordConfirm' type = 'password' name = 'passwordConfirm' placeholder = 'Confirm password' value = {passConfirmation.passwordConfirm} onChange = {passwordConfChange} required />
-//                    <div class = "button-form"></div>
-//                    <button className = 'formBtn' type = 'submit'>SUBMIT</button>
-//             </div>
-//             </form>
-//         </div>
-
-//     )
+    return (
+        <div class='login-box'>
+            <h2><b>Login</b></h2>
+            <br></br>
+            <form className = 'formWrapper' onSubmit = {handleSubmit} autoComplete="off">
+                <div class = "user-box">
+                <input className = 'input' type = 'text' name = 'username' placeholder = 'Username' value = {formState.username} onChange = {formChange} required />
+                </div>
+                <br></br>
+                <div class="user-box">
+                <input className = 'input' type = 'password' name = 'password' placeholder = 'Password' value = {formState.password} onChange = {formChange} required />
+                </div>
+                <br></br>
+                <div class="button-form">
+                <button id = 'formBtn' type = 'submit'>LOGIN</button>
+                <div class='register'>
+                  <p className = 'signup'><h5>Don't have an account?</h5><br />
+                  <a id = 'signupLink' href = '/users/new' >Register</a></p>
+                 </div>
+                 </div>
+            </form>
+            
+        </div>
+    )
 // }
 
-// export default Signup
+// export default Login
 

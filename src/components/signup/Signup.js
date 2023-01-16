@@ -2,14 +2,14 @@
 // import { useNavigate } from 'react-router-dom';
 // import './signup.css'
 
-// function Signup({ addNewUser }) {
-//     const initFormState = {
-//         firstname:'',
-//         lastname:'',
-//         username: '',
-//         email: '',
-//         password: ''
-//     }
+function Signup({ addNewUser }) {
+    const initFormState = {
+        firstname:'',
+        lastname:'',
+        username: '',
+        email: '',
+        password: ''
+    }
 
 //     const navigate = useNavigate()
 

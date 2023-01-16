@@ -1,4 +1,4 @@
-/* * {
+* {
     box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@ h3,h4,h5 {
     color: white;
 }
 
-.login-box {
+/* .login-box {
     position: absolute;
     top: 40%;
     left: 40%;

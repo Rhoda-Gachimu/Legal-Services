@@ -21,7 +21,6 @@ h3,h4,h5 {
     left: 40%;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./../../assets//Notes.jpg');
     background-size: cover;
     box-shadow: 0 15px 25px rgba(94, 54, 8, 0.7);
     border-radius: 10px;

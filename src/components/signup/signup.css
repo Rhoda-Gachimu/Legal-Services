@@ -3,19 +3,15 @@
 }
 
 body {
-    background-image: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 3px -100px;
 }
-h2{
+h2,h3{
     color: black;
 }
-h3,h4,h5 {
-    color: white;
-}
 
-.login-box {
+.signup-box {
     position: absolute;
     top: 40%;
     left: 40%;
@@ -23,17 +19,17 @@ h3,h4,h5 {
     transform: translate(-50%, -50%);
     background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./../../assets//Notes.jpg');
     background-size: cover;
-    box-shadow: 0 15px 25px rgba(94, 54, 8, 0.7);
+    box-shadow: 0 15px 25px rgba(33, 80, 167, 0.7);
     border-radius: 10px;
 }
 
-.login-box h2 {
+.signup-box h2 {
     margin: 0 0 30px;
     padding: 0;
     text-align: center;
 }
 
-.login-box .user-box input {
+.signup-box .user-box input {
     position: relative;
     width: 100%;
     padding: 10px 0;
@@ -41,20 +37,20 @@ h3,h4,h5 {
 
 #formBtn {
     padding: 10px 20px;
-    color: rgb(209, 199, 177);
+    color: rgb(177, 177, 209);
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
     letter-spacing: 4px;
-    border: 1px solid #fdb00a;
+    border: 1px solid #8F7CEC;
     margin: auto;
 }
 
 #formBtn:hover {
-    background: #fdb00a;
+    background: rgb(109, 109, 170);
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #4b3505, 0 0 25px #4b3505, 0 0 50px #4b3505, 0 0 100px #4b3505;
+    box-shadow: 0 0 5px rgb(109, 109, 170), 0 0 25px rgb(109, 109, 170), 0 0 50px rgb(109, 109, 170), 0 0 100px rgb(109, 109, 170);
 }
 
 .button-form{
@@ -63,8 +59,25 @@ h3,h4,h5 {
     margin-top: 20px;
 }
 
-#signupLink{
-    font-size: large;
+.logout-form{
+    display: flex;
+    flex-direction: row;
+    margin-left: 90%;
+}
+/* .header text-center .logout-form  */
+/* #logout {
+    padding: 10px 20px;
+    border: 1px solid rgb(24, 24, 199);
     margin: auto;
-    text-align: center;
-} */
+    transition: .2s;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+#logout:hover{
+    background: #969dc5;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(109, 109, 170), 0 0 25px rgb(109, 109, 170), 0 0 50px rgb(109, 109, 170), 0 0 100px rgb(109, 109, 170);
+} */ 

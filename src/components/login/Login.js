@@ -17,34 +17,34 @@ function Login({ setLoggedIn }) {
 
 
 
-//     const formChange = (e) => {
-//         const {name, value } = e.target;
-//         setFormState((prevState) => ({...prevState, [name]: value}))
-//     }
+    const formChange = (e) => {
+        const {name, value } = e.target;
+        setFormState((prevState) => ({...prevState, [name]: value}))
+    }
 
-//     const handleSubmit = async(e) => {
-//         e.preventDefault();
-//         await fetch ('', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify(formState)
-//         })
-//         .then ((resp) => resp.json())
-//         .then ((user) => {
-//             console.log(user)
-//             if(user.error) {
-//                 alert(user.error)
-//             } else {
-//                 setLoggedIn(user)
-//                 setFormState(initFormState)
-//                 localStorage.setItem('user', user)
-//                 console.log(user)
-//                 navigate('/home')
-//             }
-//         })
-//     }
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+        await fetch ('', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formState)
+        })
+        .then ((resp) => resp.json())
+        .then ((user) => {
+            console.log(user)
+            if(user.error) {
+                alert(user.error)
+            } else {
+                setLoggedIn(user)
+                setFormState(initFormState)
+                localStorage.setItem('user', user)
+                console.log(user)
+                navigate('/home')
+            }
+        })
+    }
 
     return (
         <div class='login-box'>

@@ -6,8 +6,31 @@ import fraud from '../../images/fraud.png'
 import violent from '../../images/violent-crimes.png'
 import dot from '../../images/dots-shape.png'
 import './service.css'
+import { useState } from 'react'
+import Practice from '../practice-area/Practice'
+import { Link } from 'react-router-dom'
 
 function Service() {
+    const[DisputeCategory, setDisputeCategory] = useState("")
+
+    const handleclick = e =>{
+        e.preventDefault() 
+        setDisputeCategory(e.target.value)
+        console.log(DisputeCategory)
+        console.log(e.target.value)
+
+        // fetch(`/api/dispute_categories/${DisputeCategory}`)
+        //   .then(res => res.json())
+        //   .then(category =>{
+        //     console.log(category)
+            // return(
+            //     <div>
+            //     <Practice category={category}/>
+            //     </div>
+            // )
+        //   })
+
+    }
   return (
     <section className='service-section'>
 
@@ -26,19 +49,19 @@ function Service() {
             <div className='service-cards-container'>
                 {/* <div className='service-dots'>
                 </div> */}
-                <div className='master-service'>
+                <Link to="Children Law" className='master-service' >
                     <img className='dots' id='service-dot1' src={dot} alt=''/>
                     <div className='service-card'>
                         <div className='service-card-top'>
-                            <img src={murder} alt='' className='service-image' />
+                            <img value = 'Children Law' src={murder} alt='' className='service-image' onClick={handleclick} />
                         </div>
                         <div className='service-card-bottom'>
-                            <span>Childern's Law</span>
+                            <span>Children Law</span>
                         </div>
                     </div>
-                </div>
+                </Link>
 
-                <div className='master-service'>
+                <Link to="Family Law" className='master-service'>
                     <div className='service-card'>
                         <div className='service-card-top'>
                         <img src={driving} alt='' className='service-image' />
@@ -47,9 +70,9 @@ function Service() {
                             <span>Family Law</span>
                         </div>
                     </div>
-                </div>
+                </Link>
 
-                <div className='master-service'>
+                <Link to="Criminal Law" className='master-service'>
                     <div className='service-card'>
                         <div className='service-card-top'>
                             <img src={drug} alt='' className='service-image' />
@@ -59,8 +82,9 @@ function Service() {
                         </div>
                     </div>
                     <img className='dots' id='service-dot2' src={dot} alt=''/>
-                </div>
-                <div className='master-service'>
+                </Link>
+
+                <Link to="Succession Law" className='master-service'>
                     <img className='dots' id='service-dot3' src={dot} alt=''/>
                     <div className='service-card'>
                         <div className='service-card-top'>
@@ -70,8 +94,9 @@ function Service() {
                             <span>Succession Law</span>
                         </div>
                     </div>
-                </div>
-                <div className='master-service'>
+                </Link>
+
+                <Link to="/home/Commercial Law" className='master-service'>
                     <img className='dots' id='service-dot4' src={dot} alt=''/>
                     <div className='service-card'>
                         <div className='service-card-top'>
@@ -81,7 +106,7 @@ function Service() {
                             <span>Commercial Law</span>
                         </div>
                     </div>
-                </div>
+                </Link>
             </div>
 
       </div>

@@ -1,0 +1,51 @@
+.practice{
+    color: black;
+
+    margin-top:2rem;
+    background-image: url("https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 650px;
+    border:29px rgba(0, 0, 0, 0.2);
+    border-style: solid black 80px;
+    box-sizing: content-box;
+}
+service{
+    display: flex;
+    flex-direction:column;
+  }
+  h2{
+    color: rgb(2, 87, 2);
+    text-align: center;
+  }
+  h3{
+    
+    color: rgb(44, 73, 44);;
+  }
+  
+  form{
+    display: block;
+    justify-content: center;
+    padding: 1rem;
+    margin-left: 70rem;
+    border-left: 2px rgb(18, 55, 18) solid ;
+    width: 10vw;
+    
+    
+  
+  }
+.category{
+    text-align: center;
+    width: 300px;
+    border: 10px solid green;
+    
+    margin-bottom: 20px;
+}
+.title{
+    text-align: center;
+    color: rgb(2, 87, 2);
+    
+    
+}
+

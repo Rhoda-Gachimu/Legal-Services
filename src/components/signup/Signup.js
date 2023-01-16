@@ -11,16 +11,16 @@ function Signup({ addNewUser }) {
         password: ''
     }
 
-//     const navigate = useNavigate()
+    const navigate = useNavigate()
 
-//     const [formState, setFormState] = useState(initFormState);
-//     const [passConfirmation, setPassConfirmation] = useState({passwordConfirm: ''})
+    const [formState, setFormState] = useState(initFormState);
+    const [passConfirmation, setPassConfirmation] = useState({passwordConfirm: ''})
 
 
-//     const formChange = (e) => {
-//         const { name, value } = e.target;
-//         setFormState((prevState) => ({...prevState, [name]: value}))
-//     }
+    const formChange = (e) => {
+        const { name, value } = e.target;
+        setFormState((prevState) => ({...prevState, [name]: value}))
+    }
 
     const passwordConfChange = (e) => {
         const { name, value } = e.target;

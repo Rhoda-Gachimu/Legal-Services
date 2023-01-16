@@ -1,6 +1,6 @@
-// import React from 'react'
-// import { useNavigate } from 'react-router-dom';
-// import './signup.css'
+import React from 'react'
+import { useNavigate } from 'react-router-dom';
+import './signup.css'
 
 function Signup({ addNewUser }) {
     const initFormState = {
@@ -76,6 +76,6 @@ function Signup({ addNewUser }) {
         </div>
 
     )
-// }
+}
 
-// export default Signup
+export default Signup

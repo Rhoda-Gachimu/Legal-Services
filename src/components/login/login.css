@@ -15,7 +15,7 @@ h3,h4,h5 {
     color: white;
 }
 
-/* .login-box {
+.login-box {
     position: absolute;
     top: 40%;
     left: 40%;
@@ -39,7 +39,7 @@ h3,h4,h5 {
     padding: 10px 0;
 }
 
-#formBtn {
+/* #formBtn {
     padding: 10px 20px;
     color: rgb(209, 199, 177);
     text-transform: uppercase;

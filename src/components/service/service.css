@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     scroll-margin: 70px 0 0 0;
+    
 }
 
 /* ==== Service Container ==== */
@@ -58,6 +59,7 @@
     height: 200px;
     background-color: aliceblue;
     transform: scale(0.9);
+    text-decoration: none;
 }
 
 #service-dot1 {
@@ -123,3 +125,11 @@
 .service-image {
     width: 80px;
 }
+#container{
+    border-radius: 10px;
+    border: 1px solid rgba(225,255,255,0.3);
+    box-shadow: 2px 2px 14px;
+    color: white;  
+    font-weight: bold;
+}
+ 
